@@ -13,4 +13,15 @@
         <!--如果商品列表为空-->
         <view class="items-blank" wx:if="{{!itemList || itemList.length == 0}}">数据为空</view>
     </scroll-view>
+    <view class="bottom_total">
+  <view class="bottom_line"></view>
+
+  <view class="row">
+    <image class="item-allselect" bindtap="allSelect" src="{{isAllSelect?'../../images/cart/comment_select.png':'../../images/cart/comment_normal.png'}}" />
+    <text class="small_text">全选</text>
+    <text>合计:￥ </text>
+    <text class="price">{{totalMoney}}</text>
+    <button class="button-red" bindtap="toBuy" formType="submit">去结算</button>
+  </view>
+</view>
 </view>

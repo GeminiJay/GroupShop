@@ -3,11 +3,11 @@ Page({
     isLike: true,
     // banner
     imgUrls: [
-      "http://mz.djmall.xmisp.cn/files/product/20161201/148057921620_middle.jpg",
-      "http://mz.djmall.xmisp.cn/files/product/20161201/148057922659_middle.jpg",
-      "http://mz.djmall.xmisp.cn/files/product/20161201/148057923813_middle.jpg",
-      "http://mz.djmall.xmisp.cn/files/product/20161201/148057924965_middle.jpg",
-      "http://mz.djmall.xmisp.cn/files/product/20161201/148057925958_middle.jpg"
+      "http://img.tukuchina.cn/images/front/v/5f/4b/235565970806.jpg",
+      "http://img.tukuchina.cn/images/front/v/29/0e/2282231719.jpg",
+      "http://img.tukuchina.cn/images/front/v/f7/bd/2316177066.jpg",
+      "http://img.tukuchina.cn/images/front/v/d3/69/235570473452.jpg",
+      "http://img.tukuchina.cn/images/front/v/98/a6/235571899671.jpg"
     ],
     indicatorDots: true, //是否显示面板指示点
     autoplay: true, //是否自动切换
@@ -42,7 +42,7 @@ Page({
   // 跳到购物车
   toCar() {
     wx.switchTab({
-      url: '/pages/cart/cart'
+      url: '../cart/cart'
     })
   },
   // 立即购买

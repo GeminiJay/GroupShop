@@ -1,7 +1,7 @@
 <view class="mod-my">
     <!--循环生成列表-->
     <block wx:key="1" wx:for="{{myList}}">
-        <view class="item {{item.className}}" bindtap="{{item.events}}">
+        <view class="item {{item.className}}" data-index="{{index}}"bindtap="jumpToOrder">
             <image class="icon-main" src="{{item.iconPath}}" />
             <text class="name">{{item.name}}</text>
             <text class="info">{{item.info}}</text>

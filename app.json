@@ -1,11 +1,12 @@
 {
   "pages":[
-   
     "pages/main/main",
     "pages/classify/classify",
     "pages/cart/cart",
     "pages/my/my",
     "pages/search/search",
+    "pages/order/order",
+    
     "pages/detail/detail"
   ],
   "window":{

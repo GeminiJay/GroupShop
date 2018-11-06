@@ -84,6 +84,62 @@ Page({
   stopRecord: function () {
     wx.stopRecord();
   },
+
+/*跳转到orderpage */
+  jumpToOrder: function(e){
+    var index = parseInt(e.currentTarget.dataset.index); 
+    if (index==1)
+    {
+      wx.navigateTo({
+        url: '../order/order'
+      })
+    }
+    if (index == 2) {
+      /*用户选择收货地址*/
+      function getaddress(){
+        var that = this;
+        if (wx.chooseAddress) {
+          wx.chooseAddress({
+            success: function (res) {
+              console.log(JSON.stringify(res));
+              console.log(res);
+              that.setData({
+                "add_userName": res.userName,
+                "add_telNumber": res.telNumber,
+                "add_provinceName": res.provinceName,
+                "add_cityName": res.cityName,
+                "add_countyName": res.countyName,
+                "add_detailInfo": res.detailInfo,
+                "add_postalCode": res.postalCode,
+                //具体收货地址显示
+                flag: false,
+
+              })
+            },
+            fail: function (res) {
+              console.log(JSON.stringify(err));
+              console.info("收货地址授权失败");
+              wx.showToast({
+                title: '授权失败，您将无法进行下单支付;重新授权请删除小程序后再次进入',
+                icon: 'success',
+                duration: 20000
+              })
+            },
+            complete: function (res) {
+              // complete
+            }
+          })
+        } else {
+          // 如果希望用户在最新版本的客户端上体验您的小程序，可以这样子提示
+          wx.showModal({
+            title: '提示',
+            content: '当前微信版本过低，无法使用该功能，请升级到最新微信版本后重试。'
+          })
+        }
+      }
+    }
+  },
+
   getLocation: function () {
     wx.getLocation({
       success: function ( res ) {

@@ -37,3 +37,15 @@ page {
     margin-left: -100rpx;
     background-color: #f45341;
 }
+button {
+  position: fixed;
+  right: 0;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 30rpx;
+  border-radius: 0rpx;
+  width: 30%;
+  height: 120rpx;
+  line-height: 120rpx;
+}

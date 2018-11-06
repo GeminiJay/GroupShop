@@ -12,28 +12,28 @@ Page({
     ],
     classifyList: [
       {
-        url: 'http://www.lsh123.com/img/bb/9c9e97710b2db4b7efb027',
+        url: 'https://www.easyicon.net/api/resizeApi.php?id=1211478&size=128',
         name: '饮料/水'
       }, {
-        url: 'http://www.lsh123.com/img/bb/fde2310b09de5d51af71d5',
+        url: 'https://www.easyicon.net/api/resizeApi.php?id=564014&size=128',
         name: '方便速食'
       }, {
-        url: 'http://www.lsh123.com/img/bb/dfa0850f4150501ba1b658',
+        url: 'https://www.easyicon.net/api/resizeApi.php?id=1181469&size=128',
         name: '饼干糕点'
       }, {
-        url: 'http://www.lsh123.com/img/bb/57b9c81b6dadb0c451adf2',
+        url: 'https://www.easyicon.net/api/resizeApi.php?id=1211471&size=128',
         name: '酒类'
       }, {
-        url: 'http://www.lsh123.com/img/bb/4536140a98ed604e5214f5',
+        url: 'https://www.easyicon.net/api/resizeApi.php?id=1208610&size=128',
         name: '糖果休食'
       }, {
-        url: 'http://www.lsh123.com/img/bb/1f48388f641bb615addbb5',
+        url: 'https://www.easyicon.net/api/resizeApi.php?id=1213132&size=128',
         name: '调料干货'
       }, {
-        url: 'http://www.lsh123.com/img/bb/011ca600a92429e9425692',
+        url: 'https://www.easyicon.net/api/resizeApi.php?id=1181478&size=128',
         name: '坚果炒货'
       }, {
-        url: 'http://www.lsh123.com/img/bb/bbec229c678f9e12a72fb7',
+        url: 'https://www.easyicon.net/api/resizeApi.php?id=1193688&size=128',
         name: '纸制品'
       }
     ],
